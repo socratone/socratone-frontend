@@ -1,0 +1,9 @@
+@import '../common/layout.scss';
+
+.button {
+  z-index: 12;
+  width: $menu-button-size;
+  height: $menu-button-size;
+  border-radius: $menu-button-size / 2;
+  cursor: pointer;
+}

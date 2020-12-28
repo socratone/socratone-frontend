@@ -1,0 +1,29 @@
+@import '../common/layout.scss';
+
+.nav {
+  position: fixed;
+  top: $menu-button-margin;
+  right: $menu-button-margin;
+  z-index: 11;
+  display: flex;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: $menu-button-size;
+  height: $menu-button-size;
+  border-radius: $menu-button-size / 2;
+  background-color: #f43a67;
+}
+
+.itemWrap {
+  position: relative;
+  top: 48px;
+  right: 32px;
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+}
