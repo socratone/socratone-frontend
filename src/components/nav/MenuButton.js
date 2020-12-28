@@ -14,7 +14,7 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const MenuButton = () => {
+const MenuButton = ({ size, color }) => {
   const isMenu = useSelector(state => state.ui.nav.isMenu);
   const dispatch = useDispatch();
 
@@ -24,8 +24,8 @@ const MenuButton = () => {
 
   return (  
     <Button onClick={handleClick}>
-      {!isMenu && <MenuIcon size="20" color="white" />}
-      {isMenu && <XIcon size="20" color="white" />}
+      {!isMenu && <MenuIcon size={size} color={color} />}
+      {isMenu && <XIcon size={size} color={color} />}
     </Button>
   );
 }

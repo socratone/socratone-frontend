@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Background = styled.section`
+const Background = styled.div`
   display: flex;
   justify-content: center;
   padding: 0 0;
   background-color: ${props => props.backgroundColor};
 `;
 
-const Wrap = styled.div`
+const Section = styled.section`
   width: 100%;
 
   @media(min-width: 720px) {
@@ -20,14 +20,14 @@ const Wrap = styled.div`
   }
 `;
 
-const PageWrap = ({ backgroundColor, children }) => {
+const Cage = ({ backgroundColor, children }) => {
   return (  
     <Background backgroundColor={backgroundColor}>
-      <Wrap>
+      <Section>
         {children}
-      </Wrap>
+      </Section>
     </Background>
   );
 }
  
-export default PageWrap;
+export default Cage;

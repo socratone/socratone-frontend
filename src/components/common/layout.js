@@ -1,4 +1,4 @@
-const menuButtonSize = 56;
+const menuButtonSize = 40;
 const menuButtonMargin = 16;
 const navSize = 480;
 

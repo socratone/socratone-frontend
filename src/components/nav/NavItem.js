@@ -3,10 +3,10 @@ import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Item = styled.a`
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   text-align: center;
-  color: white;
+  color: black;
   margin-bottom: 8px;
   cursor: pointer;
 `;

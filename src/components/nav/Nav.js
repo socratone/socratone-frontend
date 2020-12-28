@@ -21,7 +21,7 @@ const Circle = styled.div`
   width: ${menuButtonSize}px;
   height: ${menuButtonSize}px;
   border-radius: ${menuButtonSize / 2}px;
-  background-color: #f43a67;
+  background: linear-gradient(180deg,#f2cf00 0,#f2b200 100%);
   transition: top 0.3s, right 0.3s, width 0.3s, height 0.3s, border-radius 0.3s;
 `;
 
@@ -67,7 +67,7 @@ const Nav = () => {
           블로그
         </NavItem>
       </ItemWrap>}
-      <MenuButton />
+      <MenuButton size="16px" color="black" />
     </Wrap>
   );
 }
