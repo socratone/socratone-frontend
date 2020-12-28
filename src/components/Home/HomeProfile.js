@@ -1,19 +1,19 @@
 import React from 'react';
 import Text from '../common/Text';
-import styled from 'styled-components';
 import Button from '../common/Button';
 import { useHistory } from 'react-router-dom';
+import styled from 'styled-components';
 
-const Section = styled.section`
+const Section = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 32px 0;
-  background: ${props => props.background};
+  padding: 56px 0;
+  background-color: #511c97;
 `;
 
-const HomeProfile = ({ background }) => {
+const HomeProfile = () => {
   const history = useHistory();
 
   const handleClick = () => {
@@ -21,7 +21,7 @@ const HomeProfile = ({ background }) => {
   };
 
   return (  
-    <Section background={background}>
+    <Section>
       <Text size="20px" color="white">
         Frontend Developer
       </Text>

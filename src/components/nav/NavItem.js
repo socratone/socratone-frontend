@@ -1,5 +1,7 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import { toggleMenuButton } from '../../store/reducers/nav';
 import styled from 'styled-components';
 
 const Item = styled.a`
@@ -12,9 +14,11 @@ const Item = styled.a`
 `;
 
 const NavItem = ({ to, children }) => {
+  const dispatch = useDispatch();
   const history = useHistory();
 
   const handleClick = () => {
+    dispatch(toggleMenuButton());
     history.push(to);
   };
 
