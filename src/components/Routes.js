@@ -9,13 +9,22 @@ import Home from './pages/Home';
 import Works from './pages/Works';
 import Blog from './pages/Blog';
 import Profile from './pages/Profile';
-import styles from './Routes.module.scss';
+import styled from 'styled-components';
+
+const Wrap = styled.div`
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+`;
 
 const Routes = () => {
   return (  
     <Router>
       <Nav />
-      <div className={styles.mainWrap}>
+      <Wrap>
         <Switch>
           <Route path="/works">
             <Works />
@@ -30,7 +39,7 @@ const Routes = () => {
             <Home />
           </Route>
         </Switch>
-      </div>
+      </Wrap>
     </Router>
   );
 }
