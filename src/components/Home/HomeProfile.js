@@ -21,14 +21,14 @@ const HomeProfile = () => {
   };
 
   return (  
-    <Section>
+    <Section className="profile">
       <Text size="20px" color="white">
         Frontend Developer
       </Text>
       <Text size="48px" color="white">
         SOCRATONE
       </Text>
-      <Button width="96px" top="8px" onClick={handleClick}>자세히 보기</Button>
+      <Button width="104px" top="8px" onClick={handleClick}>자세히 보기</Button>
     </Section>
   );
 }

@@ -16,11 +16,11 @@ const WorksItem = ({ title, description, imageKey }) => {
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.description}>{description}</p>
         <p className={styles.buttons}>
-          <Button primary width="96px" right="8px" onClick={handleClick}>
-            자세히 보기
+          <Button primary width="80px" right="8px" onClick={handleClick}>
+            자세히
           </Button>
-          <Button primary width="96px" onClick={handleClick}>
-            사이트 가기
+          <Button primary width="80px" onClick={handleClick}>
+            사이트
           </Button>
         </p>
       </div>
