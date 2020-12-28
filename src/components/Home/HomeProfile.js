@@ -2,6 +2,7 @@ import React from 'react';
 import Text from '../common/Text';
 import styled from 'styled-components';
 import Button from '../common/Button';
+import { useHistory } from 'react-router-dom';
 
 const Section = styled.section`
   display: flex;
@@ -13,6 +14,12 @@ const Section = styled.section`
 `;
 
 const HomeProfile = ({ background }) => {
+  const history = useHistory();
+
+  const handleClick = () => {
+    history.push('/profile');
+  };
+
   return (  
     <Section background={background}>
       <Text size="20px" color="white">
@@ -21,7 +28,7 @@ const HomeProfile = ({ background }) => {
       <Text size="48px" color="white">
         SOCRATONE
       </Text>
-      <Button width="96px" top="8px">자세히 보기</Button>
+      <Button width="96px" top="8px" onClick={handleClick}>자세히 보기</Button>
     </Section>
   );
 }
