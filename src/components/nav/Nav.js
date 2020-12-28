@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { menuButtonSize, menuButtonMargin, navSize } from '../common/layout';
+import { menuButtonSize, navSize } from '../common/layout';
 import NavItem from './NavItem';
 import MenuButton from './MenuButton';
 import styles from './Nav.module.scss';
@@ -28,13 +28,13 @@ const Nav = () => {
         <NavItem to="/">
           홈
         </NavItem>
-        <NavItem to="/">
+        <NavItem to="/works">
           포트폴리오
         </NavItem>
-        <NavItem to="/">
+        <NavItem to="/blog">
           블로그
         </NavItem>
-        <NavItem to="/">
+        <NavItem to="/profile">
           프로필
         </NavItem>
       </ul>}

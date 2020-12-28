@@ -6,8 +6,8 @@ import XIcon from '../icon/XIcon';
 import styles from './MenuButton.module.scss';
 
 const MenuButton = () => {
-  const dispatch = useDispatch();
   const isMenu = useSelector(state => state.ui.nav.isMenu);
+  const dispatch = useDispatch();
 
   const handleClick = () => {
     dispatch(toggleMenuButton());

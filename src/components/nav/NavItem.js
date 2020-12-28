@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './NavItem.module.scss';
 
-const NavItem = ({ children }) => {
+const NavItem = ({ to, children }) => {
   return (  
-    <li className={styles.item}>
+    <Link to={to} className={styles.item}>
       {children}
-    </li>
+    </Link>
   );
 }
  
