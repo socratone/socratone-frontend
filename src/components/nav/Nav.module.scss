@@ -17,6 +17,7 @@
   height: $menu-button-size;
   border-radius: $menu-button-size / 2;
   background-color: #f43a67;
+  transition: top 0.3s, right 0.3s, width 0.3s, height 0.3s, border-radius 0.3s;
 }
 
 .itemWrap {
