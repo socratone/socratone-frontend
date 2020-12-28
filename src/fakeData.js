@@ -1,4 +1,4 @@
-const homeWorks = [
+const works = [
   {
     id: 1,
     imageKey: 'https://picsum.photos/160/90',
@@ -26,5 +26,5 @@ const homeWorks = [
 ];
 
 export {
-  homeWorks
+  works
 }
