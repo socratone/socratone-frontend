@@ -1,15 +1,40 @@
 @import '../common/color.scss';
 
+.profile {
+  background-color: $background-color-black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .topWrap {
-  padding-top: 100px;
-  padding-bottom: 20px;
+  padding: 100px 20px 20px 20px;
   display: flex;
   justify-content: center;
-  background-color: $background-color-black;
+  background-color: rebeccapurple; //
+
+  @media (max-width: 840px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: 1100px) {
+    width: 1060px;
+    // background-color: dodgerblue; //
+  }
 }
 
 .textArea {
-  width: 500px;
+  // background-color: dodgerblue; //
+  width: 50%;
+  margin-right: 20px;
+
+  @media (max-width: 840px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .subTitle {
@@ -22,29 +47,76 @@
   font-size: 36px;
   color: $font-color-white;
   margin-bottom: 16px;
+  word-break: break-all;
+
+  @media (max-width: 840px) {
+    text-align: center;
+  }
 }
 
 .description {
   color: $font-color-grey;
   margin-bottom: 48px;
+  word-break: break-all;
+  
+  @media (max-width: 840px) {
+    text-align: center;
+  }
+}
+
+.firstButton {
+  margin-right: 10px;
+  @media (max-width: 840px) {
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+}
+
+.secondButton {
+  @media (max-width: 840px) {
+    margin-bottom: 16px;
+  }
+}
+
+.imageArea {
+  width: 50%;
+  @media (max-width: 840px) {
+    width: 500px;
+  }
+  @media (max-width: 540px) {
+    width: 100%;
+    background-color: dodgerblue;
+  }
 }
 
 .image {
+  width: 100%;
   border-radius: 3px;
-  width: 500px;
 }
 
 .bottomBumper {
+  // padding: 0 20px;
   position: relative;
-  background-color: $background-color-black;
+  width: 100%;
   height: 200px;
+  background-color: palegoldenrod; //
+
+  @media (min-width: 1100px) {
+    width: 1060px;
+    background-color: dodgerblue; //
+  }
 }
 
 .itemWrap {
+  // padding: 0 20px;
   width: 100%;
   position: absolute;
   top: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  
+  @media (max-width: 840px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

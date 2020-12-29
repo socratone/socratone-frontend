@@ -6,7 +6,7 @@ import styles from './Profile.module.scss';
 
 const Profile = () => {
   return (  
-    <header>
+    <header className={styles.profile}>
       <div className={styles.topWrap}>
         <article className={styles.textArea}>
           <p className={styles.subTitle}>Introduction</p>
@@ -15,10 +15,10 @@ const Profile = () => {
             <p>풀스택 개발이 가능한 프론트엔드 개발자 소크라톤입니다.</p>
             <p>사운드에 관심이 많습니다.</p>
           </div>
-          <Button right="10px">VIEW DETAIL</Button>
-          <Button primary>VIEW PORTFOLIO</Button>
+          <Button className={styles.firstButton}>VIEW DETAIL</Button>
+          <Button primary className={styles.secondButton}>VIEW PORTFOLIO</Button>
         </article>
-        <article>
+        <article className={styles.imageArea}>
           <img 
             src="https://picsum.photos/800/600" 
             alt="header" 
