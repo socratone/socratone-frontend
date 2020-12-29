@@ -8,26 +8,15 @@ import Nav from './nav/Nav';
 import Home from './pages/Home';
 import styled from 'styled-components';
 
-const Wrap = styled.div`
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
-`;
-
 const Routes = () => {
   return (  
     <Router>
       <Nav />
-      <Wrap>
-        <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Wrap>
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
     </Router>
   );
 }
