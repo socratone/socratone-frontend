@@ -12,8 +12,11 @@ const Nav = () => {
         </p>
         <p className={styles.titleText}>SCRTONE</p>
       </a>
-      <Item>
-      </Item>
+      <ul className={styles.itemWrap}>
+        <Item>PORTFOLIO</Item>
+        <Item>ABOUT</Item>
+        <Item>CONTACT</Item>
+      </ul>
     </nav>
   );
 }
