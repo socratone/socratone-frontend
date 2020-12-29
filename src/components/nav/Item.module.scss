@@ -1,6 +1,8 @@
+@import '../common/color.scss';
+
 .item {
   font-size: 16px;
-  color: white;
+  color: $font-color-white;
   margin-left: 16px;
   cursor: pointer;
 }
