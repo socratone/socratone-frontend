@@ -7,7 +7,7 @@ import styles from './Profile.module.scss';
 const Profile = () => {
   return (  
     <header className={styles.profile}>
-      <div className={styles.topWrap}>
+      <section className={styles.topWrap}>
         <article className={styles.textArea}>
           <p className={styles.subTitle}>Introduction</p>
           <p className={styles.title}>Frontend Developer</p>
@@ -25,9 +25,9 @@ const Profile = () => {
             className={styles.image}
           />
         </article>
-      </div>
-      <div className={styles.bottomBumper}>
-        <section className={styles.itemWrap}>
+      </section>
+      <section className={styles.bottomWrap}>
+        <div className={styles.itemWrap}>
           <SpecialtyItem 
             icon={<DesignIcon size={80} color="#f5f5f5" />} 
             title="디자인에 대한 감각" 
@@ -43,8 +43,8 @@ const Profile = () => {
             title="디자인에 대한 감각" 
             description="일반 개발자보다 디자인 감각이 좋습니다." 
           />
-        </section>
-      </div>
+        </div>
+      </section>
     </header>
   );
 }
