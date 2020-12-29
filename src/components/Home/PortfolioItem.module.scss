@@ -1,0 +1,49 @@
+@import '../common/color.scss';
+
+.item {
+  display: flex;
+  padding: 90px 20px;
+}
+
+.imageArea {
+  width: 50%;
+}
+
+.image {
+  border-radius: 3px;
+  width: 100%;
+}
+
+.textArea {
+  margin-left: 20px;
+  width: 50%;
+}
+
+.subTitle {
+  font-size: 24px;
+  font-weight: 900;
+  color: $font-color-blue;
+  // margin-bottom: 20px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 900;
+  color: black;
+  margin-bottom: 16px;
+  word-break: break-all;
+
+  // @media (max-width: 840px) {
+  //   text-align: center;
+  // }
+}
+
+.description {
+  color: $font-color-dark;
+  margin-bottom: 48px;
+  word-break: break-all;
+  
+  // @media (max-width: 840px) {
+  //   text-align: center;
+  // }
+}

@@ -1,0 +1,12 @@
+.portfolio {
+  position: relative;
+}
+
+.topBumper {
+  position: absolute;
+  top: -120px;
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  z-index: 1;
+}
