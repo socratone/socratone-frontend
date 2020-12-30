@@ -1,0 +1,16 @@
+@import '../common/color.scss';
+
+.blogWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $background-color-black;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  gap: 20px;
+  padding: 90px 20px;
+  width: 100%;
+}
