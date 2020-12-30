@@ -36,9 +36,13 @@
 }
 
 .subTitle {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 900;
   color: $font-color-blue;
+  
+  @media (max-width: 840px) {
+    font-size: 20px;
+  }
 }
 
 .title {
@@ -47,6 +51,10 @@
   color: black;
   margin-bottom: 16px;
   word-break: break-all;
+
+  @media (max-width: 840px) {
+    font-size: 40px;
+  }
 }
 
 .description {

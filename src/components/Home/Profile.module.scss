@@ -40,15 +40,15 @@
   font-size: 40px;
   font-family: 'Italianno', cursive;
   color: $font-color-blue;
+  margin-bottom: 10px;
 }
 
 .title1 {
+  line-height: 38px;
+  letter-spacing: -2px;
   font-size: 40px;
   font-family: 'Poppins', sans-serif;
   color: $font-color-white;
-  margin-bottom: -20px;
-  letter-spacing: -2px;
-  // word-break: break-all;
 
   @media (max-width: 840px) {
     text-align: center;
@@ -56,17 +56,17 @@
 
   @media (min-width: 1100px) {
     font-size: 50px;
-    margin-bottom: -30px;
+    line-height: 45px;
   }
 }
 
 .title2 {
+  line-height: 38px;
   font-size: 40px;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   color: $font-color-white;
-  margin-bottom: 16px;
-  // word-break: break-all;
+  margin-bottom: 20px;
 
   @media (max-width: 840px) {
     text-align: center;
@@ -74,13 +74,14 @@
 
   @media (min-width: 1100px) {
     font-size: 50px;
-    margin-bottom: 10px;
+    line-height: 45px;
+    // margin-bottom: 10px;
   }
 }
 
 .description {
   color: $font-color-grey;
-  margin-bottom: 48px;
+  margin-bottom: 20px;
   word-break: break-all;
 
   p {

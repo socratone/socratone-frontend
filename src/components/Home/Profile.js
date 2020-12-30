@@ -13,7 +13,8 @@ const Profile = () => {
           <p className={styles.title1}>Frontend Developer</p>
           <p className={styles.title2}>Socratone</p>
           <div className={styles.description}>
-            <p>풀스택 개발이 가능한 프론트엔드 개발자 소크라톤입니다.</p>
+            <p>풀스택 개발이 가능한</p>
+            <p>프론트엔드 개발자 소크라톤입니다.</p>
             <p>사운드에 관심이 많습니다.</p>
           </div>
           <Button className={styles.firstButton}>VIEW DETAIL</Button>

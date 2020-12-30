@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 import Nav from './nav/Nav';
 import Home from './pages/Home';
-import styled from 'styled-components';
 
 const Routes = () => {
   return (  
