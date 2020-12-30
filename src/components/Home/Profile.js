@@ -2,11 +2,12 @@ import React from 'react';
 import Button from '../common/Button';
 import SpecialtyItem from './SpecialtyItem';
 import DesignIcon from '../icon/DesignIcon';
+import scrollToPortfolio from '../../helper/scrollToPortfolio';
 import styles from './Profile.module.scss';
 
 const Profile = () => {
   return (  
-    <header className={styles.profile}>
+    <header className={styles.profile} id="profile">
       <section className={styles.topWrap}>
         <article className={styles.textArea}>
           <p className={styles.subTitle}>Introduce</p>
@@ -18,7 +19,13 @@ const Profile = () => {
             <p>사운드에 관심이 많습니다.</p>
           </div>
           <Button className={styles.firstButton}>VIEW DETAIL</Button>
-          <Button primary className={styles.secondButton}>VIEW PORTFOLIO</Button>
+          <Button 
+            primary 
+            className={styles.secondButton}
+            onClick={scrollToPortfolio}
+          >
+            VIEW PORTFOLIO
+          </Button>
         </article>
         <article className={styles.imageArea}>
           <img 

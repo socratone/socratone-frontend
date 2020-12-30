@@ -17,7 +17,7 @@ const store = configureStore();
 function App() {
   return (
     <Provider store={store}>
-      <Screen>
+      <Screen id="screen">
         <Routes />
       </Screen>
     </Provider>

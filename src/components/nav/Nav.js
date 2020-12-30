@@ -6,7 +6,7 @@ import styles from './Nav.module.scss';
 
 const Nav = () => {
   return (  
-    <section className={styles.navWrap}>
+    <section className={styles.navWrap} id="nav">
       <nav className={styles.nav}>
         <a className={styles.title}>
           <p className={styles.titleIcon}>

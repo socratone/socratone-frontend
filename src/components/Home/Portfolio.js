@@ -12,7 +12,7 @@ const Portfolio = () => {
         title="Gabriel Latin"
         description="라틴어 교육 사이트입니다."
         image="https://picsum.photos/720/540" 
-        />
+      />
       <PortfolioItem 
         isEven
         subTitle="eCommerce Web"
@@ -29,7 +29,7 @@ const Portfolio = () => {
       <PortfolioItem 
         isEven
         subTitle="Electron App"
-        title="손가락 오르가니스트"
+        title="Finger Organist"
         description="리듬에 맞춰 손가락을 터치해 가톨릭 성가 반주를 해주는 앱입니다."
         image="https://picsum.photos/480/360" 
       />
