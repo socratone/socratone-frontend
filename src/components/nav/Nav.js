@@ -1,4 +1,6 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { toggleMenuButton } from '../../store/reducers/nav';
 import LogoIcon from '../icon/logoIcon';
 import MenuIcon from '../icon/MenuIcon';
 import styles from './Nav.module.scss';
@@ -12,6 +14,9 @@ const Item = ({ onClick, children }) => {
 }
 
 const Nav = () => {
+  const dispatch = useDispatch();
+  const handleMenuClick = () => dispatch(toggleMenuButton());
+
   return (  
     <section className={styles.navWrap} id="nav">
       <nav className={styles.nav}>
@@ -25,7 +30,7 @@ const Nav = () => {
           <Item>ABOUT</Item>
           <Item>CONTACT</Item>
         </ul>
-        <div className={styles.menu}>
+        <div className={styles.menu} onClick={handleMenuClick}>
           <MenuIcon size="20" color="#f5f5f5" />
         </div>
       </nav>
