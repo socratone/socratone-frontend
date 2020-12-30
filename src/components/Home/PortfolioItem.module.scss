@@ -39,6 +39,7 @@
   font-size: 30px;
   font-weight: 900;
   color: $font-color-blue;
+  margin-bottom: 10px;
   
   @media (max-width: 840px) {
     font-size: 20px;
@@ -49,8 +50,8 @@
   font-size: 50px;
   font-weight: 900;
   color: black;
-  margin-bottom: 16px;
-  word-break: break-all;
+  margin-bottom: 30px;
+  line-height: 50px;
 
   @media (max-width: 840px) {
     font-size: 40px;
