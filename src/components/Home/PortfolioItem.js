@@ -1,5 +1,6 @@
 import React from 'react';
 import convertTextToJSX from '../../helper/convertTextToJSX';
+import Button from '../common/Button';
 import styles from './PortfolioItem.module.scss';
 
 const PortfolioItem = ({ isEven, subTitle, title, description, image }) => {
@@ -23,6 +24,7 @@ const PortfolioItem = ({ isEven, subTitle, title, description, image }) => {
           <p className={styles.subTitle}>{subTitle}</p>
           <p className={styles.title}>{title}</p>
           <div className={styles.description}>{convertTextToJSX(description)}</div>
+          <Button primary>VIEW DETAIL</Button>
         </article>
       </section>
     </div>
