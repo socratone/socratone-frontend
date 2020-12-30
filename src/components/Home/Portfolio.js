@@ -6,6 +6,7 @@ const Portfolio = () => {
   return (  
     <main className={styles.portfolio}>
       <div className={styles.topBumper} />
+      <p className={styles.title}>PORTFOLIO</p>
       <PortfolioItem 
         subTitle="Education Web"
         title="Gabriel Latin"
