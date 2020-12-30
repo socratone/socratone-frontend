@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Russo+One&display=swap');
 @import '../common/color.scss';
 
+.item {
+  font-size: 16px;
+  font-weight: 500;
+  color: $font-color-white;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
 .navWrap {
   display: flex;
   justify-content: center;

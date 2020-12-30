@@ -1,8 +1,15 @@
 import React from 'react';
 import LogoIcon from '../icon/logoIcon';
-import Item from './Item';
 import MenuIcon from '../icon/MenuIcon';
 import styles from './Nav.module.scss';
+
+const Item = ({ onClick, children }) => {
+  return (  
+    <li onClick={onClick} className={styles.item}>
+      {children}
+    </li>
+  );
+}
 
 const Nav = () => {
   return (  
@@ -15,7 +22,6 @@ const Nav = () => {
           <p className={styles.titleText}>SCRTONE</p>
         </a>
         <ul className={styles.itemWrap}>
-          <Item>PORTFOLIO</Item>
           <Item>ABOUT</Item>
           <Item>CONTACT</Item>
         </ul>
